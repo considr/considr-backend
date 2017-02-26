@@ -1,0 +1,2063 @@
+paths:
+  '/Users/{id}/accessTokens/{fk}':
+    get:
+      tags:
+        - User
+      summary: Find a related item by id for accessTokens.
+      operationId: User.prototype.__findById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: Delete a related item by id for accessTokens.
+      operationId: User.prototype.__destroyById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Update a related item by id for accessTokens.
+      operationId: User.prototype.__updateById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+  '/Users/{id}/accessTokens':
+    get:
+      tags:
+        - User
+      summary: Queries accessTokens of User.
+      operationId: User.prototype.__get__accessTokens
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccessToken'
+      deprecated: false
+    post:
+      tags:
+        - User
+      summary: Creates a new instance in accessTokens of this model.
+      operationId: User.prototype.__create__accessTokens
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: Deletes all accessTokens of this model.
+      operationId: User.prototype.__delete__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Users/{id}/accessTokens/count':
+    get:
+      tags:
+        - User
+      summary: Counts accessTokens of User.
+      operationId: User.prototype.__count__accessTokens
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Users:
+    post:
+      tags:
+        - User
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: User.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    patch:
+      tags:
+        - User
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: User.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: User.replaceOrCreate__put_Users
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    get:
+      tags:
+        - User
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: User.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+      deprecated: false
+  /Users/replaceOrCreate:
+    post:
+      tags:
+        - User
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: User.replaceOrCreate__post_Users_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/upsertWithWhere:
+    post:
+      tags:
+        - User
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: User.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  '/Users/{id}/exists':
+    get:
+      tags:
+        - User
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'User.exists__get_Users_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Users/{id}':
+    head:
+      tags:
+        - User
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'User.exists__head_Users_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - User
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: User.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'User.replaceById__put_Users_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: User.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - User
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: User.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  '/Users/{id}/replace':
+    post:
+      tags:
+        - User
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'User.replaceById__post_Users_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/findOne:
+    get:
+      tags:
+        - User
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: User.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/update:
+    post:
+      tags:
+        - User
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: User.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Users/count:
+    get:
+      tags:
+        - User
+      summary: Count instances of the model matched by where from the data source.
+      operationId: User.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Users/login:
+    post:
+      tags:
+        - User
+      summary: Login a user with username/email and password.
+      operationId: User.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: Related objects to include in the response. See the description of return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              The response body contains properties of the AccessToken created on
+              login.
+
+              Depending on the value of `include` parameter, the body may contain
+              additional properties:
+
+
+
+
+
+
+
+                - `user` - `U+007BUserU+007D` - Data of the currently logged in
+
+              user. (`include=user`)
+
+
+            type: object
+      deprecated: false
+  /Users/logout:
+    post:
+      tags:
+        - User
+      summary: Logout a user with access token.
+      operationId: User.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/confirm:
+    get:
+      tags:
+        - User
+      summary: Confirm a user registration with email verification token.
+      operationId: User.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/reset:
+    post:
+      tags:
+        - User
+      summary: Reset password for a user with email.
+      operationId: User.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Parliamentarians:
+    post:
+      tags:
+        - Parliamentarian
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Parliamentarian.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+    patch:
+      tags:
+        - Parliamentarian
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: Parliamentarian.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+    put:
+      tags:
+        - Parliamentarian
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Parliamentarian.replaceOrCreate__put_Parliamentarians
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+    get:
+      tags:
+        - Parliamentarian
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Parliamentarian.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  /Parliamentarians/replaceOrCreate:
+    post:
+      tags:
+        - Parliamentarian
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Parliamentarian.replaceOrCreate__post_Parliamentarians_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  /Parliamentarians/upsertWithWhere:
+    post:
+      tags:
+        - Parliamentarian
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: Parliamentarian.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  '/Parliamentarians/{id}/exists':
+    get:
+      tags:
+        - Parliamentarian
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Parliamentarian.exists__get_Parliamentarians_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Parliamentarians/{id}':
+    head:
+      tags:
+        - Parliamentarian
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Parliamentarian.exists__head_Parliamentarians_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Parliamentarian
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Parliamentarian.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+    put:
+      tags:
+        - Parliamentarian
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'Parliamentarian.replaceById__put_Parliamentarians_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+    delete:
+      tags:
+        - Parliamentarian
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Parliamentarian.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Parliamentarian
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: Parliamentarian.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Parliamentarian'
+        - name: id
+          in: path
+          description: Parliamentarian id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  '/Parliamentarians/{id}/replace':
+    post:
+      tags:
+        - Parliamentarian
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'Parliamentarian.replaceById__post_Parliamentarians_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  /Parliamentarians/findOne:
+    get:
+      tags:
+        - Parliamentarian
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Parliamentarian.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Parliamentarian'
+      deprecated: false
+  /Parliamentarians/update:
+    post:
+      tags:
+        - Parliamentarian
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Parliamentarian.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Parliamentarian'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Parliamentarians/count:
+    get:
+      tags:
+        - Parliamentarian
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Parliamentarian.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /PostalCodes:
+    post:
+      tags:
+        - PostalCode
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: PostalCode.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    patch:
+      tags:
+        - PostalCode
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: PostalCode.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    put:
+      tags:
+        - PostalCode
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PostalCode.replaceOrCreate__put_PostalCodes
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    get:
+      tags:
+        - PostalCode
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: PostalCode.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PostalCode'
+      deprecated: false
+  /PostalCodes/replaceOrCreate:
+    post:
+      tags:
+        - PostalCode
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PostalCode.replaceOrCreate__post_PostalCodes_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  /PostalCodes/upsertWithWhere:
+    post:
+      tags:
+        - PostalCode
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: PostalCode.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  '/PostalCodes/{id}/exists':
+    get:
+      tags:
+        - PostalCode
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PostalCode.exists__get_PostalCodes_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/PostalCodes/{id}':
+    head:
+      tags:
+        - PostalCode
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PostalCode.exists__head_PostalCodes_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - PostalCode
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: PostalCode.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    put:
+      tags:
+        - PostalCode
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PostalCode.replaceById__put_PostalCodes_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    delete:
+      tags:
+        - PostalCode
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: PostalCode.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - PostalCode
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: PostalCode.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PostalCode'
+        - name: id
+          in: path
+          description: PostalCode id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  '/PostalCodes/{id}/replace':
+    post:
+      tags:
+        - PostalCode
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PostalCode.replaceById__post_PostalCodes_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  /PostalCodes/findOne:
+    get:
+      tags:
+        - PostalCode
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: PostalCode.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  /PostalCodes/update:
+    post:
+      tags:
+        - PostalCode
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: PostalCode.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PostalCode'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /PostalCodes/count:
+    get:
+      tags:
+        - PostalCode
+      summary: Count instances of the model matched by where from the data source.
+      operationId: PostalCode.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/Constituencies/{id}/postal_code_list/{fk}':
+    get:
+      tags:
+        - Constituency
+      summary: Find a related item by id for postal_code_list.
+      operationId: Constituency.prototype.__findById__postal_code_list
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for postal_code_list
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    delete:
+      tags:
+        - Constituency
+      summary: Delete a related item by id for postal_code_list.
+      operationId: Constituency.prototype.__destroyById__postal_code_list
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for postal_code_list
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - Constituency
+      summary: Update a related item by id for postal_code_list.
+      operationId: Constituency.prototype.__updateById__postal_code_list
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for postal_code_list
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/PostalCode'
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+  '/Constituencies/{id}/postal_code_list':
+    get:
+      tags:
+        - Constituency
+      summary: Queries postal_code_list of Constituency.
+      operationId: Constituency.prototype.__get__postal_code_list
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PostalCode'
+      deprecated: false
+    post:
+      tags:
+        - Constituency
+      summary: Creates a new instance in postal_code_list of this model.
+      operationId: Constituency.prototype.__create__postal_code_list
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/PostalCode'
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PostalCode'
+      deprecated: false
+    delete:
+      tags:
+        - Constituency
+      summary: Deletes all postal_code_list of this model.
+      operationId: Constituency.prototype.__delete__postal_code_list
+      parameters:
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Constituencies/{id}/postal_code_list/count':
+    get:
+      tags:
+        - Constituency
+      summary: Counts postal_code_list of Constituency.
+      operationId: Constituency.prototype.__count__postal_code_list
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Constituencies:
+    post:
+      tags:
+        - Constituency
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: Constituency.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+    patch:
+      tags:
+        - Constituency
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: Constituency.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+    put:
+      tags:
+        - Constituency
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Constituency.replaceOrCreate__put_Constituencies
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+    get:
+      tags:
+        - Constituency
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: Constituency.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Constituency'
+      deprecated: false
+  /Constituencies/replaceOrCreate:
+    post:
+      tags:
+        - Constituency
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: Constituency.replaceOrCreate__post_Constituencies_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+  /Constituencies/upsertWithWhere:
+    post:
+      tags:
+        - Constituency
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: Constituency.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+  '/Constituencies/{id}/exists':
+    get:
+      tags:
+        - Constituency
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Constituency.exists__get_Constituencies_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Constituencies/{id}':
+    head:
+      tags:
+        - Constituency
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'Constituency.exists__head_Constituencies_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - Constituency
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: Constituency.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+    put:
+      tags:
+        - Constituency
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'Constituency.replaceById__put_Constituencies_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+    delete:
+      tags:
+        - Constituency
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: Constituency.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - Constituency
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: Constituency.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Constituency'
+        - name: id
+          in: path
+          description: Constituency id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+  '/Constituencies/{id}/replace':
+    post:
+      tags:
+        - Constituency
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'Constituency.replaceById__post_Constituencies_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+  /Constituencies/findOne:
+    get:
+      tags:
+        - Constituency
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: Constituency.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/Constituency'
+      deprecated: false
+  /Constituencies/update:
+    post:
+      tags:
+        - Constituency
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: Constituency.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/Constituency'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Constituencies/count:
+    get:
+      tags:
+        - Constituency
+      summary: Count instances of the model matched by where from the data source.
+      operationId: Constituency.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+definitions:
+  x-any:
+    properties: {}
+  AccessToken:
+    properties:
+      id:
+        type: string
+      ttl:
+        default: 1209600
+        description: time to live in seconds (2 weeks by default)
+        type: number
+        format: double
+      created:
+        type: string
+        format: date
+      userId:
+        type: number
+        format: double
+    required:
+      - id
+    additionalProperties: false
+  User:
+    properties:
+      realm:
+        type: string
+      username:
+        type: string
+      email:
+        type: string
+      emailVerified:
+        type: boolean
+      id:
+        type: number
+        format: double
+    required:
+      - email
+    additionalProperties: false
+  Parliamentarian:
+    properties:
+      active:
+        default: true
+        type: boolean
+      last_updated:
+        default: null
+        type: string
+        format: date
+      csv_file_path:
+        type: string
+      country:
+        type: string
+      member_id:
+        type: string
+      full_name:
+        type: string
+      party:
+        type: string
+      parliament_member_url:
+        type: string
+      party_member_url:
+        type: string
+      personal_url:
+        type: string
+      photo_main_url:
+        type: string
+      photo_backup_url:
+        type: string
+      constituency_main:
+        type: string
+      constituency_detail:
+        type: string
+      constituency_number:
+        type: string
+      profession:
+        type: string
+      office_constituency_main:
+        type: string
+      office_address_main:
+        type: string
+      office_postal_code_main:
+        type: string
+      office_location_main:
+        type: string
+      office_email_main:
+        type: string
+      office_phonenumber_main:
+        type: string
+      office_constituency_backup:
+        type: string
+      office_address_backup:
+        type: string
+      office_postal_code_backup:
+        type: string
+      office_location_backup:
+        type: string
+      office_email_backup:
+        type: string
+      office_phonenumber_backup:
+        type: string
+      ministerial_role_information:
+        type: string
+      birth_details:
+        type: string
+      confession:
+        type: string
+      family_status:
+        type: string
+      parliament_join_date:
+        type: string
+      extra_role_information:
+        type: string
+      extra_role_information2:
+        type: string
+      legislation_number:
+        type: string
+      calling_score:
+        default: 0
+        type: number
+        format: double
+      id:
+        $ref: '#/definitions/ObjectID'
+    additionalProperties: false
+  PostalCode:
+    properties:
+      postal_code:
+        default: '""'
+        type: string
+      id:
+        $ref: '#/definitions/ObjectID'
+      constituencyId:
+        $ref: '#/definitions/ObjectID'
+    required:
+      - postal_code
+    additionalProperties: false
+  Constituency:
+    properties:
+      constituency_name:
+        default: '""'
+        type: string
+      constituency_code:
+        default: '""'
+        type: string
+      id:
+        $ref: '#/definitions/ObjectID'
+    required:
+      - constituency_code
+    additionalProperties: false
+  ObjectID:
+    type: string
+    pattern: "^[a-fA-F\\d]{24}$"
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: considr
+  version: 1.0.0
+  title: considr
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: 'http://localhost:4001'
+  assembly:
+    execute:
+      - invoke:
+          target-url: $(runtime-url)$(request.path)$(request.search)

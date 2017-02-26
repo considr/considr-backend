@@ -1,0 +1,30 @@
+{
+  "name": "Constituency",
+  "plural": "Constituencies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "constituency_name": {
+      "type": "string",
+      "default": "\"\""
+    },
+    "constituency_code": {
+      "type": "string",
+      "required": true,
+      "default": "\"\""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "postal_code_list": {
+      "type": "hasMany",
+      "model": "PostalCode",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

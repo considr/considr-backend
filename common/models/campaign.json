@@ -1,0 +1,77 @@
+{
+  "name": "Campaign",
+  "plural": "Campaigns",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "draft": {
+      "type": "boolean",
+      "default": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "last_updated": {
+      "type": "date"
+    },
+    "creation_date": {
+      "type": "date"
+    },
+    "campaign_picture_path": {
+      "type": "string"
+    },
+    "campaign_code": {
+      "type": "string",
+      "required": true
+    },
+    "creator_campaign": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "reason": {
+      "type": "string",
+      "required": true
+    },
+    "script": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "country_list": {
+      "type": "hasMany",
+      "model": "Country",
+      "foreignKey": ""
+    },
+    "constituency_list": {
+      "type": "hasMany",
+      "model": "Constituency",
+      "foreignKey": ""
+    },
+    "call_list": {
+      "type": "hasMany",
+      "model": "Call",
+      "foreignKey": ""
+    },
+    "parliamentarian_list": {
+      "type": "hasMany",
+      "model": "Parliamentarian",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,129 @@
+{
+  "name": "Parliamentarian",
+  "plural": "Parliamentarians",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "last_updated": {
+      "type": "date",
+      "default": null
+    },
+    "csv_file_path": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "member_id": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "party": {
+      "type": "string"
+    },
+    "parliament_member_url": {
+      "type": "string"
+    },
+    "party_member_url": {
+      "type": "string"
+    },
+    "personal_url": {
+      "type": "string"
+    },
+    "photo_main_url": {
+      "type": "string"
+    },
+    "photo_backup_url": {
+      "type": "string"
+    },
+    "constituency_main": {
+      "type": "string"
+    },
+    "constituency_detail": {
+      "type": "string"
+    },
+    "constituency_number": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "office_constituency_main": {
+      "type": "string"
+    },
+    "office_address_main": {
+      "type": "string"
+    },
+    "office_postal_code_main": {
+      "type": "string"
+    },
+    "office_location_main": {
+      "type": "string"
+    },
+    "office_email_main": {
+      "type": "string"
+    },
+    "office_phonenumber_main": {
+      "type": "string"
+    },
+    "office_constituency_backup": {
+      "type": "string"
+    },
+    "office_address_backup": {
+      "type": "string"
+    },
+    "office_postal_code_backup": {
+      "type": "string"
+    },
+    "office_location_backup": {
+      "type": "string"
+    },
+    "office_email_backup": {
+      "type": "string"
+    },
+    "office_phonenumber_backup": {
+      "type": "string"
+    },
+    "ministerial_role_information": {
+      "type": "string"
+    },
+    "birth_details": {
+      "type": "string"
+    },
+    "confession": {
+      "type": "string"
+    },
+    "family_status": {
+      "type": "string"
+    },
+    "parliament_join_date": {
+      "type": "string"
+    },
+    "extra_role_information": {
+      "type": "string"
+    },
+    "extra_role_information2": {
+      "type": "string"
+    },
+    "legislation_number": {
+      "type": "string"
+    },
+    "calling_score": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

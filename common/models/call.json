@@ -1,0 +1,47 @@
+{
+  "name": "Call",
+  "plural": "Calls",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "call_completed": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "call_result": {
+      "type": "string",
+      "required": true,
+      "default": "\"\""
+    },
+    "call_starts": {
+      "type": "date"
+    },
+    "call_ends": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "to_parliamentarian": {
+      "type": "hasOne",
+      "model": "Parliamentarian",
+      "foreignKey": ""
+    },
+    "participant_postal_code": {
+      "type": "hasOne",
+      "model": "PostalCode",
+      "foreignKey": ""
+    },
+    "participant_constituency": {
+      "type": "hasOne",
+      "model": "Constituency",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Parliamentarian": {
+    "dataSource": "considr_db",
+    "public": true
+  },
+  "PostalCode": {
+    "dataSource": "considr_db",
+    "public": true
+  },
+  "Constituency": {
+    "dataSource": "considr_db",
+    "public": true
+  },
+  "Country": {
+    "dataSource": "considr_db",
+    "public": true
+  },
+  "Call": {
+    "dataSource": "considr_db",
+    "public": true
+  },
+  "Campaign": {
+    "dataSource": "considr_db",
+    "public": true
+  }
+}

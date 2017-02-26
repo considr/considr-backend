@@ -1,0 +1,20 @@
+{
+  "name": "PostalCode",
+  "plural": "PostalCodes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "postal_code": {
+      "type": "string",
+      "required": true,
+      "default": "\"\""
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

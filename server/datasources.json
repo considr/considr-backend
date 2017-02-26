@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "considr_db": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "considr_db",
+    "name": "considr_db",
+    "connector": "mongodb"
+  }
+}

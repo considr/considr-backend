@@ -7,9 +7,9 @@
     "host": "ds157829.mlab.com",
     "port": 57829,
     "database": "heroku_bgn473wn",
-	"user": "shareduser1",
-	"password": "sharedtest1",
+    "password": "sharedtest1",
     "name": "considr_db",
+    "user": "shareduser1",
     "connector": "mongodb"
   }
 }

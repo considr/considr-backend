@@ -52,12 +52,12 @@
   "validations": [],
   "relations": {
     "country_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Country",
       "foreignKey": ""
     },
     "constituency_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Constituency",
       "foreignKey": ""
     },
@@ -67,7 +67,7 @@
       "foreignKey": ""
     },
     "parliamentarian_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Parliamentarian",
       "foreignKey": ""
     }

@@ -4,9 +4,11 @@
     "connector": "memory"
   },
   "considr_db": {
-    "host": "localhost",
-    "port": 27017,
-    "database": "considr_db",
+    "host": "ds157829.mlab.com",
+    "port": 57829,
+    "database": "heroku_bgn473wn",
+	"user": "shareduser1",
+	"password": "sharedtest1",
     "name": "considr_db",
     "connector": "mongodb"
   }

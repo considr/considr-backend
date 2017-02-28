@@ -1,0 +1,115 @@
+class Parliamentarian(FlaskDocument):
+    
+    active = db.BooleanField(default=True)
+    last_updated = db.DateTimeField(default=datetime.datetime.now)
+    csv_file_path = db.StringField(max_length=255)
+    country = db.StringField(max_length=63)
+    member_id = db.StringField(max_length=31)
+        
+    full_name = db.StringField(max_length=63)
+    party = db.StringField(max_length=63)
+    
+    parliament_member_url = db.StringField(max_length=255)
+    party_member_url = db.StringField(max_length=255)
+    personal_url = db.StringField(max_length=255)
+    
+    photo_main_url = db.StringField(max_length=255)
+    photo_backup_url = db.StringField(max_length=255)
+    
+    constituency = db.ReferenceField(Constituency)
+    
+    constituency_main = db.StringField(max_length=255)
+    constituency_detail = db.StringField(max_length=255)
+    constituency_number = db.StringField(max_length=255)
+    
+    profession = db.StringField(max_length=255)
+    
+    office_constituency_main = db.StringField(max_length=255)
+    office_address_main = db.StringField(max_length=255)
+    office_postal_code_main = db.StringField(max_length=255)
+    office_location_main = db.StringField(max_length=255)
+    office_email_main = db.StringField(max_length=255)
+    office_phonenumber_main = db.StringField(max_length=255)
+    
+    office_constituency_backup = db.StringField(max_length=255)
+    office_address_backup = db.StringField(max_length=255)
+    office_postal_code_backup = db.StringField(max_length=255)
+    office_location_backup = db.StringField(max_length=255)
+    office_email_backup = db.StringField(max_length=255)
+    office_phonenumber_backup = db.StringField(max_length=255)
+    
+    ministerial_role_information = db.StringField(max_length=255)
+    birth_details = db.StringField(max_length=255)
+    confession = db.StringField(max_length=255)
+    family_status = db.StringField(max_length=255)
+    
+    parliament_join_date = db.StringField(max_length=255)
+    
+    extra_role_information = db.StringField(max_length=255)
+    extra_role_information2 = db.StringField(max_length=255)
+    
+    legislation_number = db.StringField(max_length=255)
+    
+    calling_score = db.IntField(default=0)
+        
+    
+    #calls_list = db.ListField(db.ReferenceField(Call),default=[])
+    #To obtain calling_score and calls_list, just query for this parliamentarian in the list of all Call objects instead
+ 
+class PostalCode(FlaskDocument):
+    
+    postal_code = db.StringField(max_length=63)
+         
+class Country(FlaskDocument):
+    
+    country = db.StringField(max_length=63)
+    country_code = db.StringField(max_length=63)
+    
+    constituency_list = db.ListField(db.ReferenceField(Constituency),default=[])
+
+class Constituency(FlaskDocument):
+    
+    constituency_name = db.StringField(max_length=63)
+    constituency_code = db.StringField(max_length=63)
+    
+    postal_code_list = db.ListField(db.ReferenceField(PostalCode),default=[])
+    
+
+class Call(FlaskDocument):
+
+    call_completed = db.BooleanField(default=False)
+
+    call_result = db.StringField(max_length=127)
+
+    call_starts = db.DateTimeField()
+    call_ends = db.DateTimeField(default=datetime.datetime.now)
+
+    parliamentarian = db.ReferenceField(Parliamentarian)
+    
+    participant_postal_code = db.ReferenceField(PostalCode)
+    participant_constituency = db.ReferenceField(Constituency)
+    
+class Campaign(FlaskDocument):
+    
+    draft = db.BooleanField(default=True)
+    
+    active = db.BooleanField(default=False)
+    last_updated = db.DateTimeField(default=datetime.datetime.now)
+    creation_date = db.DateTimeField(default=datetime.datetime.now)
+    
+    campaign_picture_path = db.StringField(max_length=127)
+    
+    campaign_code = db.StringField(max_length=1023)
+    country_list = db.ListField(db.ReferenceField(Country),default=[])
+    constituency_list = db.ListField(db.ReferenceField(Region),default=[])
+    
+    call_list = db.ListField(db.ReferenceField(Call),default=[])
+    
+    creator_campaign = db.StringField(max_length=1023)
+    parliamentarian_list = db.ListField(db.ReferenceField(Parliamentarian),default=[])
+    
+    title = db.StringField(max_length=127)
+    description = db.StringField(max_length=1023)
+    reason = db.StringField(max_length=1023)
+    script = db.StringField(max_length=1023)
+    

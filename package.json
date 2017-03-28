@@ -1,7 +1,7 @@
 {
   "name": "considr",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "backend/server/server.js",
   "scripts": {
     "lint": "eslint .",
     "start": "node .",

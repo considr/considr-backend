@@ -23,6 +23,11 @@
       "type": "hasMany",
       "model": "PostalCode",
       "foreignKey": ""
+    },
+	"campaign_list": {
+      "type": "hasAndBelongsToMany",
+      "model": "Campaign",
+      "foreignKey": ""
     }
   },
   "acls": [],

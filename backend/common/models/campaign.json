@@ -47,6 +47,11 @@
     "script": {
       "type": "string",
       "required": true
+    },
+	"times_requested": {
+      "type": "integer",
+      "required": true,
+	  "default": false
     }
   },
   "validations": [],

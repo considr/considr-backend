@@ -1,0 +1,1198 @@
+[
+	  {
+		"constituency_code": "001",
+		"constituency_name": "Flensburg - Schleswig"
+	  },
+	  {
+		"constituency_code": "002",
+		"constituency_name": "Nordfriesland - Dithmarschen Nord"
+	  },
+	  {
+		"constituency_code": "003",
+		"constituency_name": "Steinburg - Dithmarschen Süd"
+	  },
+	  {
+		"constituency_code": "004",
+		"constituency_name": "Rendsburg-Eckernförde"
+	  },
+	  {
+		"constituency_code": "005",
+		"constituency_name": "Kiel"
+	  },
+	  {
+		"constituency_code": "006",
+		"constituency_name": "Plön - Neumünster"
+	  },
+	  {
+		"constituency_code": "007",
+		"constituency_name": "Pinneberg"
+	  },
+	  {
+		"constituency_code": "008",
+		"constituency_name": "Segeberg - Stormarn-Mitte"
+	  },
+	  {
+		"constituency_code": "009",
+		"constituency_name": "Ostholstein - Stormarn-Nord"
+	  },
+	  {
+		"constituency_code": "010",
+		"constituency_name": "Herzogtum Lauenburg - Stormarn-Süd"
+	  },
+	  {
+		"constituency_code": "011",
+		"constituency_name": "Lübeck"
+	  },
+	  {
+		"constituency_code": "012",
+		"constituency_name": "Schwerin - Ludwigslust-Parchim I - Nordwestmecklenburg I"
+	  },
+	  {
+		"constituency_code": "013",
+		"constituency_name": "Ludwigslust-Parchim II - Nordwestmecklenburg II - Landkreis Rostock I"
+	  },
+	  {
+		"constituency_code": "014",
+		"constituency_name": "Rostock - Landkreis Rostock II"
+	  },
+	  {
+		"constituency_code": "015",
+		"constituency_name": "Vorpommern-Rügen - Vorpommern-Greifswald I"
+	  },
+	  {
+		"constituency_code": "016",
+		"constituency_name": "Mecklenburgische Seenplatte I - Vorpommern-Greifswald II"
+	  },
+	  {
+		"constituency_code": "017",
+		"constituency_name": "Mecklenburgische Seenplatte II - Landkreis Rostock III"
+	  },
+	  {
+		"constituency_code": "018",
+		"constituency_name": "Hamburg-Mitte"
+	  },
+	  {
+		"constituency_code": "019",
+		"constituency_name": "Hamburg-Altona"
+	  },
+	  {
+		"constituency_code": "020",
+		"constituency_name": "Hamburg-Eimsbüttel"
+	  },
+	  {
+		"constituency_code": "021",
+		"constituency_name": "Hamburg-Nord"
+	  },
+	  {
+		"constituency_code": "022",
+		"constituency_name": "Hamburg-Wandsbek"
+	  },
+	  {
+		"constituency_code": "023",
+		"constituency_name": "Hamburg-Bergedorf - Harburg"
+	  },
+	  {
+		"constituency_code": "024",
+		"constituency_name": "Aurich - Emden"
+	  },
+	  {
+		"constituency_code": "025",
+		"constituency_name": "Unterems"
+	  },
+	  {
+		"constituency_code": "026",
+		"constituency_name": "Friesland - Wilhelmshaven - Wittmund"
+	  },
+	  {
+		"constituency_code": "027",
+		"constituency_name": "Oldenburg - Ammerland"
+	  },
+	  {
+		"constituency_code": "028",
+		"constituency_name": "Delmenhorst - Wesermarsch - Oldenburg-Land"
+	  },
+	  {
+		"constituency_code": "029",
+		"constituency_name": "Cuxhaven - Stade II"
+	  },
+	  {
+		"constituency_code": "030",
+		"constituency_name": "Stade I - Rotenburg II"
+	  },
+	  {
+		"constituency_code": "031",
+		"constituency_name": "Mittelems"
+	  },
+	  {
+		"constituency_code": "032",
+		"constituency_name": "Cloppenburg - Vechta"
+	  },
+	  {
+		"constituency_code": "033",
+		"constituency_name": "Diepholz - Nienburg I"
+	  },
+	  {
+		"constituency_code": "034",
+		"constituency_name": "Osterholz - Verden"
+	  },
+	  {
+		"constituency_code": "035",
+		"constituency_name": "Rotenburg I - Heidekreis"
+	  },
+	  {
+		"constituency_code": "036",
+		"constituency_name": "Harburg"
+	  },
+	  {
+		"constituency_code": "037",
+		"constituency_name": "Lüchow-Dannenberg - Lüneburg"
+	  },
+	  {
+		"constituency_code": "038",
+		"constituency_name": "Osnabrück-Land"
+	  },
+	  {
+		"constituency_code": "039",
+		"constituency_name": "Stadt Osnabrück"
+	  },
+	  {
+		"constituency_code": "040",
+		"constituency_name": "Nienburg II - Schaumburg"
+	  },
+	  {
+		"constituency_code": "041",
+		"constituency_name": "Stadt Hannover I"
+	  },
+	  {
+		"constituency_code": "042",
+		"constituency_name": "Stadt Hannover II"
+	  },
+	  {
+		"constituency_code": "043",
+		"constituency_name": "Hannover-Land I"
+	  },
+	  {
+		"constituency_code": "044",
+		"constituency_name": "Celle - Uelzen"
+	  },
+	  {
+		"constituency_code": "045",
+		"constituency_name": "Gifhorn - Peine"
+	  },
+	  {
+		"constituency_code": "046",
+		"constituency_name": "Hameln-Pyrmont - Holzminden"
+	  },
+	  {
+		"constituency_code": "047",
+		"constituency_name": "Hannover-Land II"
+	  },
+	  {
+		"constituency_code": "048",
+		"constituency_name": "Hildesheim"
+	  },
+	  {
+		"constituency_code": "049",
+		"constituency_name": "Salzgitter - Wolfenbüttel"
+	  },
+	  {
+		"constituency_code": "050",
+		"constituency_name": "Braunschweig"
+	  },
+	  {
+		"constituency_code": "051",
+		"constituency_name": "Helmstedt - Wolfsburg"
+	  },
+	  {
+		"constituency_code": "052",
+		"constituency_name": "Goslar - Northeim - Osterode"
+	  },
+	  {
+		"constituency_code": "053",
+		"constituency_name": "Göttingen"
+	  },
+	  {
+		"constituency_code": "054",
+		"constituency_name": "Bremen I"
+	  },
+	  {
+		"constituency_code": "055",
+		"constituency_name": "Bremen II - Bremerhaven"
+	  },
+	  {
+		"constituency_code": "056",
+		"constituency_name": "Prignitz - Ostprignitz-Ruppin - Havelland I"
+	  },
+	  {
+		"constituency_code": "057",
+		"constituency_name": "Uckermark - Barnim I"
+	  },
+	  {
+		"constituency_code": "058",
+		"constituency_name": "Oberhavel - Havelland II"
+	  },
+	  {
+		"constituency_code": "059",
+		"constituency_name": "Märkisch-Oderland - Barnim II"
+	  },
+	  {
+		"constituency_code": "060",
+		"constituency_name": "Brandenburg an der Havel - Potsdam-Mittelmark I - Havelland III - Teltow-Fläming I"
+	  },
+	  {
+		"constituency_code": "061",
+		"constituency_name": "Potsdam - Potsdam-Mittelmark II - Teltow-Fläming II"
+	  },
+	  {
+		"constituency_code": "062",
+		"constituency_name": "Dahme-Spreewald - Teltow-Fläming III - Oberspreewald-Lausitz I"
+	  },
+	  {
+		"constituency_code": "063",
+		"constituency_name": "Frankfurt (Oder) - Oder-Spree"
+	  },
+	  {
+		"constituency_code": "064",
+		"constituency_name": "Cottbus - Spree-Neiße"
+	  },
+	  {
+		"constituency_code": "065",
+		"constituency_name": "Elbe-Elster - Oberspreewald-Lausitz II"
+	  },
+	  {
+		"constituency_code": "066",
+		"constituency_name": "Altmark"
+	  },
+	  {
+		"constituency_code": "067",
+		"constituency_name": "Börde - Jerichower Land"
+	  },
+	  {
+		"constituency_code": "068",
+		"constituency_name": "Harz"
+	  },
+	  {
+		"constituency_code": "069",
+		"constituency_name": "Magdeburg"
+	  },
+	  {
+		"constituency_code": "070",
+		"constituency_name": "Dessau - Wittenberg"
+	  },
+	  {
+		"constituency_code": "071",
+		"constituency_name": "Anhalt"
+	  },
+	  {
+		"constituency_code": "072",
+		"constituency_name": "Halle"
+	  },
+	  {
+		"constituency_code": "073",
+		"constituency_name": "Burgenland - Saalekreis"
+	  },
+	  {
+		"constituency_code": "074",
+		"constituency_name": "Mansfeld"
+	  },
+	  {
+		"constituency_code": "075",
+		"constituency_name": "Berlin-Mitte"
+	  },
+	  {
+		"constituency_code": "076",
+		"constituency_name": "Berlin-Pankow"
+	  },
+	  {
+		"constituency_code": "077",
+		"constituency_name": "Berlin-Reinickendorf"
+	  },
+	  {
+		"constituency_code": "078",
+		"constituency_name": "Berlin-Spandau - Charlottenburg Nord"
+	  },
+	  {
+		"constituency_code": "079",
+		"constituency_name": "Berlin-Steglitz-Zehlendorf"
+	  },
+	  {
+		"constituency_code": "080",
+		"constituency_name": "Berlin-Charlottenburg-Wilmersdorf"
+	  },
+	  {
+		"constituency_code": "081",
+		"constituency_name": "Berlin-Tempelhof - Schöneberg"
+	  },
+	  {
+		"constituency_code": "082",
+		"constituency_name": "Berlin-Neukölln"
+	  },
+	  {
+		"constituency_code": "083",
+		"constituency_name": "Berlin-Friedrichshain - Kreuzberg - Prenzlauer Berg Ost"
+	  },
+	  {
+		"constituency_code": "084",
+		"constituency_name": "Berlin-Treptow - Köpenick"
+	  },
+	  {
+		"constituency_code": "085",
+		"constituency_name": "Berlin-Marzahn - Hellersdorf"
+	  },
+	  {
+		"constituency_code": "086",
+		"constituency_name": "Berlin-Lichtenberg"
+	  },
+	  {
+		"constituency_code": "087",
+		"constituency_name": "Aachen I"
+	  },
+	  {
+		"constituency_code": "088",
+		"constituency_name": "Aachen II"
+	  },
+	  {
+		"constituency_code": "089",
+		"constituency_name": "Heinsberg"
+	  },
+	  {
+		"constituency_code": "090",
+		"constituency_name": "Düren"
+	  },
+	  {
+		"constituency_code": "091",
+		"constituency_name": "Rhein-Erft-Kreis I"
+	  },
+	  {
+		"constituency_code": "092",
+		"constituency_name": "Euskirchen - Rhein-Erft-Kreis II"
+	  },
+	  {
+		"constituency_code": "093",
+		"constituency_name": "Köln I"
+	  },
+	  {
+		"constituency_code": "094",
+		"constituency_name": "Köln II"
+	  },
+	  {
+		"constituency_code": "095",
+		"constituency_name": "Köln III"
+	  },
+	  {
+		"constituency_code": "096",
+		"constituency_name": "Bonn"
+	  },
+	  {
+		"constituency_code": "097",
+		"constituency_name": "Rhein-Sieg-Kreis I"
+	  },
+	  {
+		"constituency_code": "098",
+		"constituency_name": "Rhein-Sieg-Kreis II"
+	  },
+	  {
+		"constituency_code": "099",
+		"constituency_name": "Oberbergischer Kreis"
+	  },
+	  {
+		"constituency_code": "100",
+		"constituency_name": "Rheinisch-Bergischer Kreis"
+	  },
+	  {
+		"constituency_code": "101",
+		"constituency_name": "Leverkusen - Köln IV"
+	  },
+	  {
+		"constituency_code": "102",
+		"constituency_name": "Wuppertal I"
+	  },
+	  {
+		"constituency_code": "103",
+		"constituency_name": "Solingen - Remscheid - Wuppertal II"
+	  },
+	  {
+		"constituency_code": "104",
+		"constituency_name": "Mettmann I"
+	  },
+	  {
+		"constituency_code": "105",
+		"constituency_name": "Mettmann II"
+	  },
+	  {
+		"constituency_code": "106",
+		"constituency_name": "Düsseldorf I"
+	  },
+	  {
+		"constituency_code": "107",
+		"constituency_name": "Düsseldorf II"
+	  },
+	  {
+		"constituency_code": "108",
+		"constituency_name": "Neuss I"
+	  },
+	  {
+		"constituency_code": "109",
+		"constituency_name": "Mönchengladbach"
+	  },
+	  {
+		"constituency_code": "110",
+		"constituency_name": "Krefeld I - Neuss II"
+	  },
+	  {
+		"constituency_code": "111",
+		"constituency_name": "Viersen"
+	  },
+	  {
+		"constituency_code": "112",
+		"constituency_name": "Kleve"
+	  },
+	  {
+		"constituency_code": "113",
+		"constituency_name": "Wesel I"
+	  },
+	  {
+		"constituency_code": "114",
+		"constituency_name": "Krefeld II - Wesel II"
+	  },
+	  {
+		"constituency_code": "115",
+		"constituency_name": "Duisburg I"
+	  },
+	  {
+		"constituency_code": "116",
+		"constituency_name": "Duisburg II"
+	  },
+	  {
+		"constituency_code": "117",
+		"constituency_name": "Oberhausen - Wesel III"
+	  },
+	  {
+		"constituency_code": "118",
+		"constituency_name": "Mülheim - Essen I"
+	  },
+	  {
+		"constituency_code": "119",
+		"constituency_name": "Essen II"
+	  },
+	  {
+		"constituency_code": "120",
+		"constituency_name": "Essen III"
+	  },
+	  {
+		"constituency_code": "121",
+		"constituency_name": "Recklinghausen I"
+	  },
+	  {
+		"constituency_code": "122",
+		"constituency_name": "Recklinghausen II"
+	  },
+	  {
+		"constituency_code": "123",
+		"constituency_name": "Gelsenkirchen"
+	  },
+	  {
+		"constituency_code": "124",
+		"constituency_name": "Steinfurt I - Borken I"
+	  },
+	  {
+		"constituency_code": "125",
+		"constituency_name": "Bottrop - Recklinghausen III"
+	  },
+	  {
+		"constituency_code": "126",
+		"constituency_name": "Borken II"
+	  },
+	  {
+		"constituency_code": "127",
+		"constituency_name": "Coesfeld - Steinfurt II"
+	  },
+	  {
+		"constituency_code": "128",
+		"constituency_name": "Steinfurt III"
+	  },
+	  {
+		"constituency_code": "129",
+		"constituency_name": "Münster"
+	  },
+	  {
+		"constituency_code": "130",
+		"constituency_name": "Warendorf"
+	  },
+	  {
+		"constituency_code": "131",
+		"constituency_name": "Gütersloh I"
+	  },
+	  {
+		"constituency_code": "132",
+		"constituency_name": "Bielefeld - Gütersloh II"
+	  },
+	  {
+		"constituency_code": "133",
+		"constituency_name": "Herford - Minden-Lübbecke II"
+	  },
+	  {
+		"constituency_code": "134",
+		"constituency_name": "Minden-Lübbecke I"
+	  },
+	  {
+		"constituency_code": "135",
+		"constituency_name": "Lippe I"
+	  },
+	  {
+		"constituency_code": "136",
+		"constituency_name": "Höxter - Lippe II"
+	  },
+	  {
+		"constituency_code": "137",
+		"constituency_name": "Paderborn - Gütersloh III"
+	  },
+	  {
+		"constituency_code": "138",
+		"constituency_name": "Hagen - Ennepe-Ruhr-Kreis I"
+	  },
+	  {
+		"constituency_code": "139",
+		"constituency_name": "Ennepe-Ruhr-Kreis II"
+	  },
+	  {
+		"constituency_code": "140",
+		"constituency_name": "Bochum I"
+	  },
+	  {
+		"constituency_code": "141",
+		"constituency_name": "Herne - Bochum II"
+	  },
+	  {
+		"constituency_code": "142",
+		"constituency_name": "Dortmund I"
+	  },
+	  {
+		"constituency_code": "143",
+		"constituency_name": "Dortmund II"
+	  },
+	  {
+		"constituency_code": "144",
+		"constituency_name": "Unna I"
+	  },
+	  {
+		"constituency_code": "145",
+		"constituency_name": "Hamm - Unna II"
+	  },
+	  {
+		"constituency_code": "146",
+		"constituency_name": "Soest"
+	  },
+	  {
+		"constituency_code": "147",
+		"constituency_name": "Hochsauerlandkreis"
+	  },
+	  {
+		"constituency_code": "148",
+		"constituency_name": "Siegen-Wittgenstein"
+	  },
+	  {
+		"constituency_code": "149",
+		"constituency_name": "Olpe - Märkischer Kreis I"
+	  },
+	  {
+		"constituency_code": "150",
+		"constituency_name": "Märkischer Kreis II"
+	  },
+	  {
+		"constituency_code": "151",
+		"constituency_name": "Nordsachsen"
+	  },
+	  {
+		"constituency_code": "152",
+		"constituency_name": "Leipzig I"
+	  },
+	  {
+		"constituency_code": "153",
+		"constituency_name": "Leipzig II"
+	  },
+	  {
+		"constituency_code": "154",
+		"constituency_name": "Leipzig-Land"
+	  },
+	  {
+		"constituency_code": "155",
+		"constituency_name": "Meißen"
+	  },
+	  {
+		"constituency_code": "156",
+		"constituency_name": "Bautzen I"
+	  },
+	  {
+		"constituency_code": "157",
+		"constituency_name": "Görlitz"
+	  },
+	  {
+		"constituency_code": "158",
+		"constituency_name": "Sächsische Schweiz - Osterzgebirge"
+	  },
+	  {
+		"constituency_code": "159",
+		"constituency_name": "Dresden I"
+	  },
+	  {
+		"constituency_code": "160",
+		"constituency_name": "Dresden II - Bautzen II"
+	  },
+	  {
+		"constituency_code": "161",
+		"constituency_name": "Mittelsachsen"
+	  },
+	  {
+		"constituency_code": "162",
+		"constituency_name": "Chemnitz"
+	  },
+	  {
+		"constituency_code": "163",
+		"constituency_name": "Chemnitzer Umland - Erzgebirgskreis II"
+	  },
+	  {
+		"constituency_code": "164",
+		"constituency_name": "Erzgebirgskreis I"
+	  },
+	  {
+		"constituency_code": "165",
+		"constituency_name": "Zwickau"
+	  },
+	  {
+		"constituency_code": "166",
+		"constituency_name": "Vogtlandkreis"
+	  },
+	  {
+		"constituency_code": "167",
+		"constituency_name": "Waldeck"
+	  },
+	  {
+		"constituency_code": "168",
+		"constituency_name": "Kassel"
+	  },
+	  {
+		"constituency_code": "169",
+		"constituency_name": "Werra-Meißner - Hersfeld-Rotenburg"
+	  },
+	  {
+		"constituency_code": "170",
+		"constituency_name": "Schwalm-Eder"
+	  },
+	  {
+		"constituency_code": "171",
+		"constituency_name": "Marburg"
+	  },
+	  {
+		"constituency_code": "172",
+		"constituency_name": "Lahn-Dill"
+	  },
+	  {
+		"constituency_code": "173",
+		"constituency_name": "Gießen"
+	  },
+	  {
+		"constituency_code": "174",
+		"constituency_name": "Fulda"
+	  },
+	  {
+		"constituency_code": "175",
+		"constituency_name": "Main-Kinzig - Wetterau II - Schotten"
+	  },
+	  {
+		"constituency_code": "176",
+		"constituency_name": "Hochtaunus"
+	  },
+	  {
+		"constituency_code": "177",
+		"constituency_name": "Wetterau I"
+	  },
+	  {
+		"constituency_code": "178",
+		"constituency_name": "Rheingau-Taunus - Limburg"
+	  },
+	  {
+		"constituency_code": "179",
+		"constituency_name": "Wiesbaden"
+	  },
+	  {
+		"constituency_code": "180",
+		"constituency_name": "Hanau"
+	  },
+	  {
+		"constituency_code": "181",
+		"constituency_name": "Main-Taunus"
+	  },
+	  {
+		"constituency_code": "182",
+		"constituency_name": "Frankfurt am Main I"
+	  },
+	  {
+		"constituency_code": "183",
+		"constituency_name": "Frankfurt am Main II"
+	  },
+	  {
+		"constituency_code": "184",
+		"constituency_name": "Groß-Gerau"
+	  },
+	  {
+		"constituency_code": "185",
+		"constituency_name": "Offenbach"
+	  },
+	  {
+		"constituency_code": "186",
+		"constituency_name": "Darmstadt"
+	  },
+	  {
+		"constituency_code": "187",
+		"constituency_name": "Odenwald"
+	  },
+	  {
+		"constituency_code": "188",
+		"constituency_name": "Bergstraße"
+	  },
+	  {
+		"constituency_code": "189",
+		"constituency_name": "Eichsfeld - Nordhausen - Unstrut-Hainich-Kreis I"
+	  },
+	  {
+		"constituency_code": "190",
+		"constituency_name": "Eisenach - Wartburgkreis - Unstrut-Hainich-Kreis II"
+	  },
+	  {
+		"constituency_code": "191",
+		"constituency_name": "Kyffhäuserkreis - Sömmerda - Weimarer Land I"
+	  },
+	  {
+		"constituency_code": "192",
+		"constituency_name": "Gotha - Ilm-Kreis"
+	  },
+	  {
+		"constituency_code": "193",
+		"constituency_name": "Erfurt - Weimar - Weimarer Land II"
+	  },
+	  {
+		"constituency_code": "194",
+		"constituency_name": "Gera - Jena - Saale-Holzland-Kreis"
+	  },
+	  {
+		"constituency_code": "195",
+		"constituency_name": "Greiz - Altenburger Land"
+	  },
+	  {
+		"constituency_code": "196",
+		"constituency_name": "Sonneberg - Saalfeld-Rudolstadt - Saale-Orla-Kreis"
+	  },
+	  {
+		"constituency_code": "197",
+		"constituency_name": "Suhl - Schmalkalden-Meiningen - Hildburghausen"
+	  },
+	  {
+		"constituency_code": "198",
+		"constituency_name": "Neuwied"
+	  },
+	  {
+		"constituency_code": "199",
+		"constituency_name": "Ahrweiler"
+	  },
+	  {
+		"constituency_code": "200",
+		"constituency_name": "Koblenz"
+	  },
+	  {
+		"constituency_code": "201",
+		"constituency_name": "Mosel/Rhein-Hunsrück"
+	  },
+	  {
+		"constituency_code": "202",
+		"constituency_name": "Kreuznach"
+	  },
+	  {
+		"constituency_code": "203",
+		"constituency_name": "Bitburg"
+	  },
+	  {
+		"constituency_code": "204",
+		"constituency_name": "Trier"
+	  },
+	  {
+		"constituency_code": "205",
+		"constituency_name": "Montabaur"
+	  },
+	  {
+		"constituency_code": "206",
+		"constituency_name": "Mainz"
+	  },
+	  {
+		"constituency_code": "207",
+		"constituency_name": "Worms"
+	  },
+	  {
+		"constituency_code": "208",
+		"constituency_name": "Ludwigshafen/Frankenthal"
+	  },
+	  {
+		"constituency_code": "209",
+		"constituency_name": "Neustadt - Speyer"
+	  },
+	  {
+		"constituency_code": "210",
+		"constituency_name": "Kaiserslautern"
+	  },
+	  {
+		"constituency_code": "211",
+		"constituency_name": "Pirmasens"
+	  },
+	  {
+		"constituency_code": "212",
+		"constituency_name": "Südpfalz"
+	  },
+	  {
+		"constituency_code": "213",
+		"constituency_name": "Altötting"
+	  },
+	  {
+		"constituency_code": "214",
+		"constituency_name": "Erding - Ebersberg"
+	  },
+	  {
+		"constituency_code": "215",
+		"constituency_name": "Freising"
+	  },
+	  {
+		"constituency_code": "216",
+		"constituency_name": "Fürstenfeldbruck"
+	  },
+	  {
+		"constituency_code": "217",
+		"constituency_name": "Ingolstadt"
+	  },
+	  {
+		"constituency_code": "218",
+		"constituency_name": "München-Nord"
+	  },
+	  {
+		"constituency_code": "219",
+		"constituency_name": "München-Ost"
+	  },
+	  {
+		"constituency_code": "220",
+		"constituency_name": "München-Süd"
+	  },
+	  {
+		"constituency_code": "221",
+		"constituency_name": "München-West/Mitte"
+	  },
+	  {
+		"constituency_code": "222",
+		"constituency_name": "München-Land"
+	  },
+	  {
+		"constituency_code": "223",
+		"constituency_name": "Rosenheim"
+	  },
+	  {
+		"constituency_code": "224",
+		"constituency_name": "Starnberg"
+	  },
+	  {
+		"constituency_code": "225",
+		"constituency_name": "Traunstein"
+	  },
+	  {
+		"constituency_code": "226",
+		"constituency_name": "Weilheim"
+	  },
+	  {
+		"constituency_code": "227",
+		"constituency_name": "Deggendorf"
+	  },
+	  {
+		"constituency_code": "228",
+		"constituency_name": "Landshut"
+	  },
+	  {
+		"constituency_code": "229",
+		"constituency_name": "Passau"
+	  },
+	  {
+		"constituency_code": "230",
+		"constituency_name": "Rottal-Inn"
+	  },
+	  {
+		"constituency_code": "231",
+		"constituency_name": "Straubing"
+	  },
+	  {
+		"constituency_code": "232",
+		"constituency_name": "Amberg"
+	  },
+	  {
+		"constituency_code": "233",
+		"constituency_name": "Regensburg"
+	  },
+	  {
+		"constituency_code": "234",
+		"constituency_name": "Schwandorf"
+	  },
+	  {
+		"constituency_code": "235",
+		"constituency_name": "Weiden"
+	  },
+	  {
+		"constituency_code": "236",
+		"constituency_name": "Bamberg"
+	  },
+	  {
+		"constituency_code": "237",
+		"constituency_name": "Bayreuth"
+	  },
+	  {
+		"constituency_code": "238",
+		"constituency_name": "Coburg"
+	  },
+	  {
+		"constituency_code": "239",
+		"constituency_name": "Hof"
+	  },
+	  {
+		"constituency_code": "240",
+		"constituency_name": "Kulmbach"
+	  },
+	  {
+		"constituency_code": "241",
+		"constituency_name": "Ansbach"
+	  },
+	  {
+		"constituency_code": "242",
+		"constituency_name": "Erlangen"
+	  },
+	  {
+		"constituency_code": "243",
+		"constituency_name": "Fürth"
+	  },
+	  {
+		"constituency_code": "244",
+		"constituency_name": "Nürnberg-Nord"
+	  },
+	  {
+		"constituency_code": "245",
+		"constituency_name": "Nürnberg-Süd"
+	  },
+	  {
+		"constituency_code": "246",
+		"constituency_name": "Roth"
+	  },
+	  {
+		"constituency_code": "247",
+		"constituency_name": "Aschaffenburg"
+	  },
+	  {
+		"constituency_code": "248",
+		"constituency_name": "Bad Kissingen"
+	  },
+	  {
+		"constituency_code": "249",
+		"constituency_name": "Main-Spessart"
+	  },
+	  {
+		"constituency_code": "250",
+		"constituency_name": "Schweinfurt"
+	  },
+	  {
+		"constituency_code": "251",
+		"constituency_name": "Würzburg"
+	  },
+	  {
+		"constituency_code": "252",
+		"constituency_name": "Augsburg-Stadt"
+	  },
+	  {
+		"constituency_code": "253",
+		"constituency_name": "Augsburg-Land"
+	  },
+	  {
+		"constituency_code": "254",
+		"constituency_name": "Donau-Ries"
+	  },
+	  {
+		"constituency_code": "255",
+		"constituency_name": "Neu-Ulm"
+	  },
+	  {
+		"constituency_code": "256",
+		"constituency_name": "Oberallgäu"
+	  },
+	  {
+		"constituency_code": "257",
+		"constituency_name": "Ostallgäu"
+	  },
+	  {
+		"constituency_code": "258",
+		"constituency_name": "Stuttgart I"
+	  },
+	  {
+		"constituency_code": "259",
+		"constituency_name": "Stuttgart II"
+	  },
+	  {
+		"constituency_code": "260",
+		"constituency_name": "Böblingen"
+	  },
+	  {
+		"constituency_code": "261",
+		"constituency_name": "Esslingen"
+	  },
+	  {
+		"constituency_code": "262",
+		"constituency_name": "Nürtingen"
+	  },
+	  {
+		"constituency_code": "263",
+		"constituency_name": "Göppingen"
+	  },
+	  {
+		"constituency_code": "264",
+		"constituency_name": "Waiblingen"
+	  },
+	  {
+		"constituency_code": "265",
+		"constituency_name": "Ludwigsburg"
+	  },
+	  {
+		"constituency_code": "266",
+		"constituency_name": "Neckar-Zaber"
+	  },
+	  {
+		"constituency_code": "267",
+		"constituency_name": "Heilbronn"
+	  },
+	  {
+		"constituency_code": "268",
+		"constituency_name": "Schwäbisch Hall - Hohenlohe"
+	  },
+	  {
+		"constituency_code": "269",
+		"constituency_name": "Backnang - Schwäbisch Gmünd"
+	  },
+	  {
+		"constituency_code": "270",
+		"constituency_name": "Aalen - Heidenheim"
+	  },
+	  {
+		"constituency_code": "271",
+		"constituency_name": "Karlsruhe-Stadt"
+	  },
+	  {
+		"constituency_code": "272",
+		"constituency_name": "Karlsruhe-Land"
+	  },
+	  {
+		"constituency_code": "273",
+		"constituency_name": "Rastatt"
+	  },
+	  {
+		"constituency_code": "274",
+		"constituency_name": "Heidelberg"
+	  },
+	  {
+		"constituency_code": "275",
+		"constituency_name": "Mannheim"
+	  },
+	  {
+		"constituency_code": "276",
+		"constituency_name": "Odenwald - Tauber"
+	  },
+	  {
+		"constituency_code": "277",
+		"constituency_name": "Rhein-Neckar"
+	  },
+	  {
+		"constituency_code": "278",
+		"constituency_name": "Bruchsal - Schwetzingen"
+	  },
+	  {
+		"constituency_code": "279",
+		"constituency_name": "Pforzheim"
+	  },
+	  {
+		"constituency_code": "280",
+		"constituency_name": "Calw"
+	  },
+	  {
+		"constituency_code": "281",
+		"constituency_name": "Freiburg"
+	  },
+	  {
+		"constituency_code": "282",
+		"constituency_name": "Lörrach - Müllheim"
+	  },
+	  {
+		"constituency_code": "283",
+		"constituency_name": "Emmendingen - Lahr"
+	  },
+	  {
+		"constituency_code": "284",
+		"constituency_name": "Offenburg"
+	  },
+	  {
+		"constituency_code": "285",
+		"constituency_name": "Rottweil - Tuttlingen"
+	  },
+	  {
+		"constituency_code": "286",
+		"constituency_name": "Schwarzwald-Baar"
+	  },
+	  {
+		"constituency_code": "287",
+		"constituency_name": "Konstanz"
+	  },
+	  {
+		"constituency_code": "288",
+		"constituency_name": "Waldshut"
+	  },
+	  {
+		"constituency_code": "289",
+		"constituency_name": "Reutlingen"
+	  },
+	  {
+		"constituency_code": "290",
+		"constituency_name": "Tübingen"
+	  },
+	  {
+		"constituency_code": "291",
+		"constituency_name": "Ulm"
+	  },
+	  {
+		"constituency_code": "292",
+		"constituency_name": "Biberach"
+	  },
+	  {
+		"constituency_code": "293",
+		"constituency_name": "Bodensee"
+	  },
+	  {
+		"constituency_code": "294",
+		"constituency_name": "Ravensburg"
+	  },
+	  {
+		"constituency_code": "295",
+		"constituency_name": "Zollernalb - Sigmaringen"
+	  },
+	  {
+		"constituency_code": "296",
+		"constituency_name": "Saarbrücken"
+	  },
+	  {
+		"constituency_code": "297",
+		"constituency_name": "Saarlouis"
+	  },
+	  {
+		"constituency_code": "298",
+		"constituency_name": "St. Wendel"
+	  },
+	  {
+		"constituency_code": "299",
+		"constituency_name": "Homburg"
+	  }
+	]

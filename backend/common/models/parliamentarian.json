@@ -123,7 +123,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+	"campaign_list": {
+      "type": "hasAndBelongsToMany",
+      "model": "Campaign",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

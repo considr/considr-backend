@@ -67,7 +67,7 @@
       "foreignKey": ""
     },
     "call_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Call",
       "foreignKey": ""
     },

@@ -20,13 +20,13 @@
   "validations": [],
   "relations": {
     "postal_code_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "PostalCode",
       "foreignKey": ""
     },
-	"campaign_list": {
+	"parliamentarian_list": {
       "type": "hasAndBelongsToMany",
-      "model": "Campaign",
+      "model": "Parliamentarian",
       "foreignKey": ""
     }
   },

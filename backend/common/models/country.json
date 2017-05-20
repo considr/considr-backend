@@ -21,7 +21,7 @@
   "validations": [],
   "relations": {
     "constituency_list": {
-      "type": "hasMany",
+      "type": "hasAndBelongsToMany",
       "model": "Constituency",
       "foreignKey": ""
     }

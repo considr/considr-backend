@@ -7,7 +7,7 @@ var path = require('path');
 
 var app = require(path.resolve(__dirname, '../server/server'));
 var ds = app.datasources.considr_db;
-ds.automigrate('PostalCode', function(err) {
+ds.autoupdate('PostalCode', function(err) {
   if (err) throw err;
 
   var postal_codes = 

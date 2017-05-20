@@ -29,13 +29,37 @@
 		http://www.considr.me/api/Constituencies/58b59cb501514222e03b7885/campaign_list
 
 
-3.   Webservice to get related representatives (recieves a campaign id - responds with representative list):
+3.   Webservice to get related representatives (recieves a campaign id - responds with representative list) 
+	(Only valid for predeterminately chosen parliamentarians):
 	
 	Make an API call to get the list of Parliamentarians that are listed this Campaign,
 	by giving the id:
 	
 
 		http://www.considr.me/api/Campaigns/id/parliamentarian_list
+
+	Example:
+
+		http://www.considr.me/api/Campaigns/5916fc06bacace199cefeb00/parliamentarian_list
+		
+4.   Webservice to get related representatives (recieves a campaign id - responds with representative list) 
+	(For non-predeterminately chosen parliamentarians):
+	
+	(I gotta modify the Constituency model to include parliamentarian_list, and fill it for all constituencies)
+	
+	First, gotta make an API call to get the foreign key of the Constituency:
+
+		http://www.considr.me/api/Constituencies?filter={"where":{"constituency_code":code}}
+		
+	Where "code" is the constituency_code from the selected constituency in the autocomplete search field.
+
+	From this object, take the "id" of the Constituency.
+	
+	Make an API call to get the list of Parliamentarians that are listed in this Constituency,
+	by giving the id:
+	
+
+		http://www.considr.me/api/Constituencies/id/parliamentarian_list
 
 	Example:
 

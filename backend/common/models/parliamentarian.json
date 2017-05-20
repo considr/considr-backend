@@ -128,6 +128,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Campaign",
       "foreignKey": ""
+    },	
+	"constituency": {
+      "type": "hasAndBelongsToMany",
+      "model": "Constituency",
+      "foreignKey": ""
     }
   },
   "acls": [],

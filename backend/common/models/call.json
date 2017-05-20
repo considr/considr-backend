@@ -27,18 +27,23 @@
   "validations": [],
   "relations": {
     "to_parliamentarian": {
-      "type": "hasOne",
+      "type": "hasAndBelongsToMany",
       "model": "Parliamentarian",
       "foreignKey": ""
     },
     "participant_postal_code": {
-      "type": "hasOne",
+      "type": "hasAndBelongsToMany",
       "model": "PostalCode",
       "foreignKey": ""
     },
     "participant_constituency": {
-      "type": "hasOne",
+      "type": "hasAndBelongsToMany",
       "model": "Constituency",
+      "foreignKey": ""
+    },
+    "from_campaign": {
+      "type": "hasAndBelongsToMany",
+      "model": "Campaign",
       "foreignKey": ""
     }
   },

@@ -7,7 +7,9 @@ var path = require('path');
 
 var app = require(path.resolve(__dirname, '../server/server'));
 var ds = app.datasources.considr_db;
-ds.automigrate('Parliamentarian', function(err) {
+ds.autoupdate('Parliamentarian', function(err) {
+	
+	console.log("AUTOMIGRATE PARLIAMENTARIAN!!!");
   if (err) throw err;
 
   var parliamentarians = 

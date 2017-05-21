@@ -5,7 +5,7 @@ module.exports = function(Parliamentarian) {
 	var app = require('../../server/server');
 
 	
-	Parliamentarian.link_parliamentarians_to_constituencies = function(cb) {
+	Parliamentarian.linkParliamentariansToConstituencies = function(cb) {
 				  
 		var Constituency = app.models.Constituency;
 				
@@ -41,7 +41,8 @@ module.exports = function(Parliamentarian) {
 	  
     }
 
-    Parliamentarian.remoteMethod('link_parliamentarians_to_constituencies', {          
-          returns: {arg: 'result', type: 'string'}
+    Parliamentarian.remoteMethod('linkParliamentariansToConstituencies', {          
+          returns: {arg: 'result', type: 'string'},
+		  description: "Re-links all Parliamentarians to their relevant Constituencies and viceversa"
     });
 };

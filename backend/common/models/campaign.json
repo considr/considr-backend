@@ -51,6 +51,16 @@
 	"times_requested": {
       "type": "integer",
       "required": true,
+	  "default": 0
+    },
+	"is_parliamentarians_predefined": {
+      "type": "boolean",
+      "required": true,
+	  "default": false
+    },
+	"is_federal_level": {
+      "type": "boolean",
+      "required": true,
 	  "default": false
     }
   },

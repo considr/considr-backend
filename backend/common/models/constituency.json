@@ -28,6 +28,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Parliamentarian",
       "foreignKey": ""
+    },
+	"campaign_list": {
+      "type": "hasAndBelongsToMany",
+      "model": "Campaign",
+      "foreignKey": ""
     }
   },
   "acls": [],

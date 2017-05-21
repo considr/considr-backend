@@ -3,7 +3,6 @@
 module.exports = function(Parliamentarian) {
 
 	var app = require('../../server/server');
-
 	
 	Parliamentarian.linkParliamentariansToConstituencies = function(cb) {
 				  

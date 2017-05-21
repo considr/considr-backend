@@ -23,7 +23,9 @@ ds.autoupdate('Campaign', function(err) {
 		"title": "First Campaign",
 		"description": "This is the first campaign's description",
 		"reason": "This is the reason why",
-		"script": "This is the script"
+		"script": "This is the script",
+		"is_parliamentarians_predefined": true,
+		"is_federal_level": true
 	  },
 	  {
 		"draft": true,
@@ -36,7 +38,9 @@ ds.autoupdate('Campaign', function(err) {
 		"title": "Second Campaign",
 		"description": "This is the second campaign's description",
 		"reason": "This is the reason why",
-		"script": "This is the script"
+		"script": "This is the script",
+		"is_parliamentarians_predefined": false,
+		"is_federal_level": false
 	  }
 	];
   var count = campaigns.length;

@@ -6,27 +6,11 @@
 
 	Use this json as a static dataset for the autocomplete search field.
 		
-2.	List Campaigns by Consistuency (recieves a consistuency id - reponds with camapign list + detail for each campign wrapped in the object):
-
-	First, gotta make an API call to get the foreign key of the Constituency:
-
-		http://www.considr.me/api/Constituencies?filter={"where":{"constituency_code":code}}
-
-	Where "code" is the constituency_code from the selected constituency in the autocomplete search field.
-
-	From this object, take the "id" of the Constituency.
-
-	Make another API call to get the list of Campaigns that list this Constituency:
-
-		http://www.considr.me/api/Constituencies/id/campaign_list
+2.	List Campaigns by Constituency Code (recieves a consistuency code - reponds with campaign list with detail for each campign wrapped in the object):
 
 	Example:
 
-		http://www.considr.me/api/Constituencies?filter={"where":{"constituency_code":"002"}}
-
-		Then:
-
-		http://www.considr.me/api/Constituencies/58b59cb501514222e03b7885/campaign_list
+		http://localhost:3000/api/Constituencies/listOfCampaignsFromConstituencyCode?constituency_code=019
 
 
 3.   Webservice to get related representatives (recieves a campaign id - responds with representative list) 

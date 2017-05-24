@@ -17,6 +17,6 @@
       "extended": true,
       "limit": "100kb"
     },
-    "cors": true
+    "cors": false
   }
 }

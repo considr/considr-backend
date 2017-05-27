@@ -50,9 +50,7 @@ module.exports = function(Constituency) {
     });
 	
 	Constituency.listOfParliamentariansFromConstituencyCode = function(constituency_code, cb) {
-		
-		var Parliamentarian = app.models.Campaign;	
-				
+						
 		Constituency.findOne({where: {constituency_code: constituency_code},include: "parliamentarian_list"}, function(err, constituency) {
 								
 			if(constituency != null)
@@ -75,5 +73,50 @@ module.exports = function(Constituency) {
 		  http: {path: '/listOfParliamentariansFromConstituencyCode', verb: 'get'},
 		  description: "Takes constituency_code and returns a list of parliamentarians for that constituency"
     });
+	
+	Constituency.listOfParliamentariansFromCampaignIdOrConstituencyCode = function(campaign_id, constituency_code, cb) {
+		
+		var Campaign = app.models.Campaign;	
+		
+		Campaign.findOne({where: {id: campaign_id},include: "parliamentarian_list"}, function(err, campaign) {
+						
+			if(campaign != null)
+			{				
+				if(campaign.is_parliamentarians_predefined)	
+				{
+					cb(null, campaign.parliamentarian_list());
+				}	
+				else
+				{
+					Constituency.findOne({where: {constituency_code: constituency_code},include: "parliamentarian_list"}, function(err, constituency) {
+								
+						if(constituency != null)
+						{		
+							
+							cb(null, constituency.parliamentarian_list());
+						}	
+						else
+						{
+							cb(null, "Constituency not found");
+						}					
+										
+					}); 	
+				}	
+			}		
+							
+		}); 	
+    }
+	
+	Constituency.remoteMethod('listOfParliamentariansFromCampaignIdOrConstituencyCode', {
+          accepts: [
+				 {arg: 'campaign_id', type: 'string', required: true},
+				 {arg: 'constituency_code', type: 'string', required: true},
+				],		  
+          returns: {arg: 'result', type: 'object'},
+		  http: {path: '/listOfParliamentariansFromCampaignIdOrConstituencyCode', verb: 'get'},
+		  description: "Takes campaign_id and constituency_code and returns a list of parliamentarians for that campaign (if predetermind) or that constituency (if not)"
+    });
+	
+	
 
 };

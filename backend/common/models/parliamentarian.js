@@ -2,6 +2,47 @@
 
 module.exports = function(Parliamentarian) {
 
+	Parliamentarian.disableRemoteMethodByName('create');
+	Parliamentarian.disableRemoteMethodByName('replaceOrCreate');
+	Parliamentarian.disableRemoteMethodByName('patchOrCreate');
+	Parliamentarian.disableRemoteMethodByName('exists');
+	//Parliamentarian.disableRemoteMethodByName('findById');
+	//Parliamentarian.disableRemoteMethodByName('find');
+	//Parliamentarian.disableRemoteMethodByName('findOne');
+	Parliamentarian.disableRemoteMethodByName('destroyById');
+	//Parliamentarian.disableRemoteMethodByName('count');
+	Parliamentarian.disableRemoteMethodByName('replaceById');
+	Parliamentarian.disableRemoteMethodByName('prototype.patchAttributes');
+	Parliamentarian.disableRemoteMethodByName('createChangeStream');
+	Parliamentarian.disableRemoteMethodByName('updateAll');
+	Parliamentarian.disableRemoteMethodByName('upsertWithWhere');			
+		
+	//Parliamentarian.disableRemoteMethodByName('prototype.__get__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__create__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__update__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__destroy__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__delete__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__exists__campaign_list');
+	//Parliamentarian.disableRemoteMethodByName('prototype.__findById__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__destroyById__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__count__campaign_list');
+	Parliamentarian.disableRemoteMethodByName('prototype.__updateById__campaign_list');
+	//Parliamentarian.disableRemoteMethodByName('prototype.__link__campaign_list');
+	//Parliamentarian.disableRemoteMethodByName('prototype.__unlink__campaign_list');
+	
+	//Parliamentarian.disableRemoteMethodByName('prototype.__get__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__create__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__update__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__destroy__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__delete__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__exists__constituency');
+	//Parliamentarian.disableRemoteMethodByName('prototype.__findById__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__destroyById__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__count__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__updateById__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__link__constituency');
+	Parliamentarian.disableRemoteMethodByName('prototype.__unlink__constituency');
+	
 	var app = require('../../server/server');
 	
 	Parliamentarian.linkParliamentariansToConstituencies = function(cb) {
